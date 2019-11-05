@@ -12,7 +12,8 @@ import org.bonitasoft.engine.transaction.TransactionService;
 import java.io.StringWriter;
 import java.io.PrintWriter;
 
-List<Long> flownodesIds = {{listNodeId;tips:Please give a list of nodes id, separated by a comma;type:JSON;placeholder:[123,4424,553]}}
+// List<Long> flownodesIds = {{listNodeId;tips:Please give a list of nodes id, separated by a comma;type:JSON;placeholder:[123,4424,553]}}
+List<Long> flownodesIds = Eval.me({{listNodeId;tips:Please give a list of nodes id, separated by a comma;type:TEXT;placeholder:[40004L, 20020L]}});
 
 int tenantId = 1;
  
